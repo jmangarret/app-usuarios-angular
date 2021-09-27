@@ -1,0 +1,23 @@
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>N Document</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of dataUsuarios; index as i">
+      <td>{{usuario.id }}</td>
+      <td>{{usuario.first_name }}</td>
+      <td>{{usuario.last_name }}</td>
+      <td>{{ usuario.n_document }}</td>
+      <td>{{usuario.email }}</td>
+      <td>{{usuario.phone_number }}</td>
+
+    </tr>
+  </tbody>
+</table>
